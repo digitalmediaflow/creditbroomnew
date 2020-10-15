@@ -20,7 +20,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      Credit Broom 
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -75,9 +75,9 @@ const useStyles = makeStyles((theme) => ({
 
 const tiers = [
   {
-    title: 'Free',
-    price: '0',
-    description: ['10 users included', '2 GB of storage', 'Help center access', 'Email support'],
+    title: 'Silver Plan',
+    price: '200',
+    description: ['One Time Audit Fee: $399', '2 GB of storage', 'Help center access', 'Email support'],
     buttonText: 'Sign up for free',
     buttonVariant: 'outlined',
   },
@@ -135,20 +135,23 @@ export default function Landing() {
       <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            Company name
+          <img src="https://elasticbeanstalk-us-east-1-025638217736.s3.amazonaws.com/logo.png"/>
           </Typography>
           <nav>
             <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-              Features
+           How it works
             </Link>
             <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-              Enterprise
+             About
             </Link>
             <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-              Support
+              Contact 
             </Link>
           </nav>
-          <Button href="#" color="primary" variant="outlined" className={classes.link}>
+          <Button href="#" color="primary:ff6333" variant="outlined" className={classes.link}>
+            Get Started
+          </Button>
+          <Button href="#"   color="primary" variant="outlined" className={classes.link}>
             Login
           </Button>
         </Toolbar>
@@ -156,11 +159,11 @@ export default function Landing() {
       {/* Hero unit */}
       <Container maxWidth="sm" component="main" className={classes.heroContent}>
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-          Pricing
+          Do you want a good credit score?
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" component="p">
-          Quickly build an effective pricing table for your potential customers with this layout.
-          It&apos;s built with default Material-UI components with little customization.
+        We can get judgements, bankruptcies, car repossessions,
+         student loans, evictions, and liens removed from your credit report
         </Typography>
       </Container>
       {/* End hero unit */}
