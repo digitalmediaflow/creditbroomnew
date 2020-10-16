@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 // import AdditionalDetails from "../Components/AdditionalDetails"
 // import FirstForm from "../Components/FirstForm"
 // import Success from "../Components/Success"
+import Login from "../src/Components/Login"
 import Landing from "../src/Components/LandingPage"
+import Routes from "../src/Routes"
+
 
 export default class App extends Component {
   state = {

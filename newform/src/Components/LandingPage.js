@@ -10,10 +10,20 @@ import Grid from '@material-ui/core/Grid';
 import StarIcon from '@material-ui/icons/StarBorder';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import FirstForm from "../Components/FirstForm";
+import About from "../Components/About"
+import Login from "../Components/Login"
+
+
 
 function Copyright() {
   return (
@@ -138,22 +148,32 @@ export default function Landing() {
           <img src="https://elasticbeanstalk-us-east-1-025638217736.s3.amazonaws.com/logo.png"/>
           </Typography>
           <nav>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+            <Link variant="button" color="textPrimary" to="/how" className={classes.link}>
            How it works
             </Link>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+            <Link variant="button" color="textPrimary" to="/about"className={classes.link}>
              About
             </Link>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+            <Link variant="button" color="textPrimary" to="/contact" className={classes.link}>
               Contact 
             </Link>
           </nav>
-          <Button href="#" color="primary:ff6333" variant="outlined" className={classes.link}>
+
+
+         
+          <Button  component={Link} to={"/signup"} color="primary:ff6333" variant="outlined" className={classes.link}>
             Get Started
           </Button>
-          <Button href="#"   color="primary" variant="outlined" className={classes.link}>
+
+        
+      
+
+      
+          <Button  component={Link}  to="/login" color="primary" variant="outlined" className={classes.link}>
             Login
           </Button>
+          
+
         </Toolbar>
       </AppBar>
       {/* Hero unit */}
