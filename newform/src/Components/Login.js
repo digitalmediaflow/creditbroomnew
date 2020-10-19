@@ -62,14 +62,14 @@ export default function Login() {
 
 
 
-    <Container component="main" maxWidth="">
+    <Container component="main" maxWidth="100">
     <Header/>
       <CssBaseline />
       
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar>
+        {/* <Avatar className={classes.avatar}> */}
+          {/* <LockOutlinedIcon /> */}
+        {/* </Avatar> */}
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
